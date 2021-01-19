@@ -1,0 +1,20 @@
+:root 
+{
+    --color-text-1: hsl(238, 29%, 16%);
+    --color-text-2: hsl(14, 88%, 65%);
+
+    --color-gradient-1: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+    --color-neutral-1: hsl(237, 12%, 33%);
+    --color-neutral-2: hsl(240, 6%, 50%);
+
+    --color-divider: hsl(240, 5%, 91%);
+}
+
+body * 
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
