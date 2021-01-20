@@ -41,8 +41,8 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
     color: var(--color-text-1);
+    line-height: 1.5em;
 }
 
 
@@ -54,11 +54,10 @@ body
     align-items: center;
 
     background: white;
-    border-radius: 5%;
+    border-radius: 2em;
     box-shadow: 0 30px 30px 20px rgba(0, 0, 0, 20%);
 
     position: relative;
-    margin-top: 100px;
 
     padding-bottom: 1.5em;
 
@@ -67,14 +66,16 @@ body
     background-repeat: no-repeat;
 
     max-width: 920px;
-    width: 88%;
+    width: 91%;
+    margin-top: 120px;
 }
 
 
 .img-woman-mobile 
 {
     position: relative;
-    top: -24%;
+    top: -110px;
+    left: -15px;
 }
 
 
@@ -103,6 +104,7 @@ body
     color: var(--color-neutral-2);
     padding: 1.3em 0;
     border-bottom: 1px solid var(--color-divider);
+    cursor: pointer;
 }
 
 
@@ -117,15 +119,103 @@ body
 {
     font-weight: 400;
     font-size: 0.8rem;
-    color: var(--color-text-1);
 } 
 
 .accordion-answer 
 {
     display:none;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+.accordion-option.active .accordion-answer
+{
+    display: block;
+}
+
+.accordion-option.active .accordion-title 
+{
+    font-weight: 700;
+    color: var(--color-text-1);
+}
+
+
+.accordion-option:hover .accordion-title 
+{
+    color:var(--color-text-2);
 }
 
 
 
+@media (min-width:600px)
+{
+    .only-desktop
+    {
+        display: initial;
+    }
+
+    .only-mobile{
+        display: none;
+    }
+
+    body 
+    {
+        justify-content: center;
+    }
+
+
+    .accordion-card 
+    {
+        flex-direction: row;
+
+        background-image: url('../images/illustration-woman-online-desktop.svg'), url('../images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: calc(0% - 80px) 50%, calc(0% - 575px) calc(50% - 70px);
+        padding: 7em 5em;
+    }
+
+    .img-box 
+    {
+        position: absolute;
+        left: -100px;
+        top: calc(50% - 40px);
+
+    }
+
+    .img-woman-desktop
+    {
+        position: relative;
+        left: -85px;
+    }
+
+
+    .faq 
+    {
+        margin-top: 0;
+        margin-left: 50%;
+    }
+
+    .faq-title 
+    {
+        text-align: left;
+        margin-bottom: 1em;
+    }
+
+
+    .accordion
+    {
+        padding: 0;
+    }
+
+    .accordion-option 
+    {
+        padding: 1.5em 0;
+    }
+
+    .accordion-title 
+    {
+        font-size: 0.9rem;
+    }
+}
 
 
